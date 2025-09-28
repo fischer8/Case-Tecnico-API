@@ -12,7 +12,7 @@ Utilize o comando abaixo para instalar as dependências:
 python -m pip install flask_sqlalchemy flask
 ```
 
-Comando para executar:
+Para executar a API utilize o comando:
 ```markdown
 python app.py
 ```
