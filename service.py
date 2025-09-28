@@ -1,4 +1,4 @@
-from models import Atividade
+from model import Atividade
 from database import db
 from datetime import datetime
 from flask import abort
@@ -24,4 +24,5 @@ class AtividadeService:
         db.session.add(atividade)
         db.session.commit()
         return atividade
+
 
