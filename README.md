@@ -1,5 +1,6 @@
 
 ### **Case Técnico API**
+Objetivo:
 - Desenvolver uma API RESTful que permita o registro e a consulta de atividades fisicas realizadas por funcionários
   
 ---
