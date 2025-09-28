@@ -4,7 +4,7 @@
   
 ---
 
-### **Requisitos**
+### **Instruções**
 
 Utilize o comando abaixo para instalar as dependências:
 
