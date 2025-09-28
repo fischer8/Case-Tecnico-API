@@ -4,9 +4,24 @@
   
 ---
 
-### **Dependências**
+### **Requisitos**
 
 Utilize o comando abaixo para instalar as dependências:
 
 ```markdown
 python -m pip install flask_sqlalchemy flask
+```
+
+Comando para executar:
+```markdown
+python app.py
+```
+
+---
+
+### **Tecnologias utilizadas**
+
+- **Python 3.9+**
+- **Flask** → Framework
+- **Flask-SQLAlchemy** → ORM para banco de dados
+- **SQLite** → Banco de dados
