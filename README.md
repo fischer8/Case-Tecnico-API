@@ -9,20 +9,37 @@ Objetivo:
 
 Utilize o comando abaixo para instalar as dependências:
 
-```markdown
+```
 python -m pip install flask_sqlalchemy flask
 ```
 
 Para executar a API utilize o comando:
-```markdown
+```
 python app.py
 ```
 
 ---
+### **Rotas**
+- GET /atividades - retorna todas as atividades
+- GET /atividades/{funcional} - retorna todas as atividades de um funcionário
+- POST /atividades - cadastra uma atividade
 
-### **Tecnologias utilizadas**
+#### Exemplo requisição JSON da rota POST /atividades:
+```
+  {
+    "funcional": "123456",
+    "dataHora": "2025-09-24T07:30:00",
+    "codigoAtividade": "RUN",
+    "descricaoAtividade": "Corrida de 5km"
+  }
+```
+
+---
+
+### **Detalhes**
 
 - **Python 3.9+**
 - **Flask** → Framework
 - **Flask-SQLAlchemy** → ORM para banco de dados
 - **SQLite** → Banco de dados
+- **Gerenciamento de Erros** → Gerenciador global de erros
