@@ -35,4 +35,5 @@ def create_atividade():
         abort(400, description="Campo 'dataHora' deve estar no formato ISO (YYYY-MM-DDTHH:MM:SS)")
 
     atividade = AtividadeService.create(data)
-    return jsonify({ "Mensagem": "Atividade cadastrada com sucesso!", "Atividade": atividade.to_dict()}), 201
+    return jsonify({ "mensagem": "Atividade cadastrada com sucesso!", "atividade": atividade.to_dict()}), 201
+
