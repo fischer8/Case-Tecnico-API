@@ -5,7 +5,7 @@ class Atividade(db.Model):
 
     idAtividade = db.Column(db.Integer, primary_key=True, autoincrement=True)
     funcional = db.Column(db.Integer, nullable=False)
-    codigoAtividade = db.Column(db.String(5), nullable=False)  
+    codigoAtividade = db.Column(db.String(20), nullable=False)  
     dataHora = db.Column(db.DateTime, nullable=False)
     descricaoAtividade = db.Column(db.String(100), nullable=False)
 
@@ -17,3 +17,4 @@ class Atividade(db.Model):
             "codigoAtividade": self.codigoAtividade,
             "descricaoAtividade": self.descricaoAtividade,
         }
+
