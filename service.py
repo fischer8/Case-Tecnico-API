@@ -13,12 +13,12 @@ class AtividadeService:
         return Atividade.query.filter_by(funcional=funcional).all()
 
     @staticmethod
-    def create(data):
+    def create(registo_atividade):
         atividade = Atividade(
-            funcional=data["funcional"], 
-            dataHora=datetime.fromisoformat(data["dataHora"]),
-            codigoAtividade=data["codigoAtividade"],
-            descricaoAtividade=data["descricaoAtividade"],
+            funcional=registo_atividade["funcional"], 
+            dataHora=datetime.fromisoformat(registo_atividade["dataHora"]),
+            codigoAtividade=registo_atividade["codigoAtividade"],
+            descricaoAtividade=registo_atividade["descricaoAtividade"],
         )
         
         db.session.add(atividade)
