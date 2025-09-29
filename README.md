@@ -7,7 +7,7 @@ Objetivo:
 
 ### **Instruções**
 
-Utilize o comando abaixo para instalar as dependências:
+Utilize o comando abaixo no terminal para instalar as dependências:
 
 ```
 python -m pip install flask_sqlalchemy flask
