@@ -24,7 +24,7 @@ python app.py
 - GET /atividades/{funcional} - Retorna todas as atividades de um funcionário
 - POST /atividades - Cadastra uma atividade
 
-#### Exemplo requisição JSON da rota POST /atividades:
+#### Exemplo de uma requisição JSON para rota POST /atividades:
 ```
   {
     "funcional": "123456",
