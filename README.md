@@ -20,9 +20,9 @@ python app.py
 
 ---
 ### **Rotas**
-- GET /atividades - retorna todas as atividades
-- GET /atividades/{funcional} - retorna todas as atividades de um funcionário
-- POST /atividades - cadastra uma atividade
+- GET /atividades - Retorna todas as atividades
+- GET /atividades/{funcional} - Retorna todas as atividades de um funcionário
+- POST /atividades - Cadastra uma atividade
 
 #### Exemplo requisição JSON da rota POST /atividades:
 ```
