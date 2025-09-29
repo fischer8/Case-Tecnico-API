@@ -15,7 +15,7 @@ python -m pip install flask_sqlalchemy flask
 
 Para executar a API utilize o comando:
 ```
-python app.py
+python caminho/do/arquivo/app.py
 ```
 
 ---
