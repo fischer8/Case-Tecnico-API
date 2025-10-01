@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify, abort
+from flask import Blueprint, request, jsonify
 from service import AtividadeService
 from utils.validador_api_key import check_api_key
 from datetime import datetime
@@ -39,5 +39,6 @@ def create_atividade():
 
     atividade = AtividadeService.create(atividade_json)
     return jsonify({ "mensagem": "Atividade cadastrada com sucesso!", "atividade": atividade.to_dict()}), 201
+
 
 
