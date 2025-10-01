@@ -15,7 +15,7 @@ python -m pip install flask_sqlalchemy flask pytest
 
 Para executar a API utilize o comando:
 ```
-python app.py 
+flask run
 ```
 
 Para testar a API utilize o comando:
