@@ -2,7 +2,13 @@
 ### **Case Técnico API**
 Objetivo:
 - Desenvolver uma API RESTful que permita o registro e a consulta de atividades fisicas realizadas por funcionários
-  
+
+---
+### **Rotas**
+- GET /atividades - Retorna todas as atividades
+- GET /atividades/{funcional} - Retorna todas as atividades de um funcionário
+- POST /atividades - Cadastra uma atividade
+
 ---
 
 ### **Instruções**
@@ -22,14 +28,11 @@ Para testar a API utilize o comando:
 ```
 pytest teste.py
 ```
-
 ---
-### **Rotas**
-- GET /atividades - Retorna todas as atividades
-- GET /atividades/{funcional} - Retorna todas as atividades de um funcionário
-- POST /atividades - Cadastra uma atividade
 
-Header (chave api obrigatória em todas as rotas):
+### **Corpo da requisição**
+
+Header (Chave API obrigatória em todas as rotas):
 ```
   {
     "x-api-key": "case_tecnico"
