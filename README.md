@@ -29,9 +29,16 @@ pytest teste.py
 - GET /atividades/{funcional} - Retorna todas as atividades de um funcionário
 - POST /atividades - Cadastra uma atividade
 
+Header (chave api obrigatória em todas as rotas):
+```
+  {
+    "x-api-key": "case_tecnico"
+  }
+```
+
 #### Exemplo de uma requisição JSON para rota POST /atividades:
 
-Header (chave api):
+Header:
 ```
   {
     "x-api-key": "case_tecnico"
