@@ -43,19 +43,13 @@ Payload:
 
 ### **Instruções para executar**
 
-Clone o repositório
-
-```
-git clone https://github.com/usuario/repositorio.git
-```
-
 Utilize o comando abaixo no terminal para instalar as dependências:
 
 ```
 python -m pip install flask_sqlalchemy flask pytest
 ```
 
-Para executar a API navegue até a pasta raiz do projeto e utilize o comando:
+Para executar a API navegue pelo terminal até a pasta raiz do projeto e utilize o comando:
 ```
 flask run
 ```
