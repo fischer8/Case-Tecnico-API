@@ -26,7 +26,7 @@ flask run
 
 Para testar a API utilize o comando:
 ```
-pytest teste.py
+pytest testes_unitarios.py
 ```
 ---
 
