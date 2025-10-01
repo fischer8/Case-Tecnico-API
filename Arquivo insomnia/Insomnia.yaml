@@ -1,9 +1,9 @@
 type: collection.insomnia.rest/5.0
-name: Case técnico API REST
+name: API Atividades
 meta:
   id: wrk_ace5cebe689342b5a5f251dc967a5922
   created: 1759099169994
-  modified: 1759103633732
+  modified: 1759293149084
   description: ""
 collection:
   - url: http://127.0.0.1:5000/atividades
@@ -11,7 +11,7 @@ collection:
     meta:
       id: req_b1cdf18d3c0946eeb02648517a63f7ae
       created: 1759099170073
-      modified: 1759104373213
+      modified: 1759293019212
       isPrivate: false
       description: ""
       sortKey: -1759099170073
@@ -21,7 +21,7 @@ collection:
       text: |-
         {
         	"funcional": "123456",
-        	"dataHora": "2025-09-27T11:30:00",
+        	"dataHora": "2025-09-24T07:30:00",
         	"codigoAtividade": "RUN",
         	"descricaoAtividade": "Corrida de 5km"
         }
@@ -34,8 +34,15 @@ collection:
     headers:
       - name: Content-Type
         value: application/json
+        id: pair_336631012e9f4e59a00851aecd18409b
       - name: User-Agent
         value: insomnia/11.6.1
+        id: pair_1bd4204cf26f46ed93b5a7dab9d2e30b
+      - id: pair_9ace5934041644158619cfa69225e686
+        name: x-api-key
+        value: case_tecnico
+        description: ""
+        disabled: false
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -49,7 +56,7 @@ collection:
     meta:
       id: req_c4b8f10df7a14da1bee9eca663a4367d
       created: 1759099520608
-      modified: 1759104364803
+      modified: 1759293077264
       isPrivate: false
       description: ""
       sortKey: -1759099520608
@@ -57,6 +64,12 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.6.1
+        id: pair_6075c2433d7e4ae48587e46ce28c44dd
+      - id: pair_589e4d18e3a3460cbcc332e867a1a847
+        name: x-api-key
+        value: case_tecnico
+        description: ""
+        disabled: false
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -70,7 +83,7 @@ collection:
     meta:
       id: req_e7e1552033f94e6c86115774601aebd3
       created: 1759100739550
-      modified: 1759104290991
+      modified: 1759293093008
       isPrivate: false
       description: ""
       sortKey: -1759100739550
@@ -78,6 +91,12 @@ collection:
     headers:
       - name: User-Agent
         value: insomnia/11.6.1
+        id: pair_1af249a31fb64f19bb578a1e2f04bf91
+      - id: pair_d76850d3412049a985aa2b7331d6ae25
+        name: x-api-key
+        value: case_tecnico
+        description: ""
+        disabled: false
     settings:
       renderRequestBody: true
       encodeUrl: true
