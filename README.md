@@ -8,26 +8,6 @@ Objetivo:
 - GET /atividades - Retorna todas as atividades
 - GET /atividades/{funcional} - Retorna todas as atividades de um funcionário
 - POST /atividades - Cadastra uma atividade
-
----
-
-### **Instruções**
-
-Utilize o comando abaixo no terminal para instalar as dependências:
-
-```
-python -m pip install flask_sqlalchemy flask pytest
-```
-
-Para executar a API utilize o comando:
-```
-flask run
-```
-
-Para testar a API utilize o comando:
-```
-pytest testes_unitarios.py
-```
 ---
 
 ### **Corpo da requisição**
@@ -61,6 +41,24 @@ Payload:
 
 ---
 
+### **Instruções para executar**
+
+Utilize o comando abaixo no terminal para instalar as dependências:
+
+```
+python -m pip install flask_sqlalchemy flask pytest
+```
+
+Para executar a API utilize o comando:
+```
+flask run
+```
+
+Para testar a API utilize o comando:
+```
+pytest testes_unitarios.py
+```
+---
 ### **Detalhes**
 
 - **Python 3.9+**
