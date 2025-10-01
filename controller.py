@@ -7,12 +7,14 @@ from utils.app_error import AppError
 atividades = Blueprint("atividades", __name__)
 
 @atividades.route("/atividades", methods=["GET"])
+@check_api_key
 def get_atividades():
     atividades = AtividadeService.get_all()
     return jsonify([atividade.to_dict() for atividade in atividades])
 
 
-@atividades.route("/atividades/<int:funcional>", methods=["GET"]) 
+@atividades.route("/atividades/<int:funcional>", methods=["GET"])
+@check_api_key
 def get_atividades_by_funcional(funcional): 
     atividades = AtividadeService.get_by_funcional(funcional) 
 
