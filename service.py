@@ -1,7 +1,6 @@
 from model import Atividade
 from database import db
 from datetime import datetime
-from flask import abort
 
 class AtividadeService:
     @staticmethod
