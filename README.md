@@ -10,12 +10,17 @@ Objetivo:
 Utilize o comando abaixo no terminal para instalar as dependências:
 
 ```
-python -m pip install flask_sqlalchemy flask
+python -m pip install flask_sqlalchemy flask pytest
 ```
 
 Para executar a API utilize o comando:
 ```
-python caminho/do/arquivo/app.py
+python app.py 
+```
+
+Para testar a API utilize o comando:
+```
+pytest teste.py
 ```
 
 ---
@@ -25,6 +30,16 @@ python caminho/do/arquivo/app.py
 - POST /atividades - Cadastra uma atividade
 
 #### Exemplo de uma requisição JSON para rota POST /atividades:
+
+Header (chave api):
+```
+  {
+    "x-api-key": "case_tecnico"
+  }
+```
+
+Payload:
+
 ```
   {
     "funcional": "123456",
@@ -43,3 +58,6 @@ python caminho/do/arquivo/app.py
 - **Flask-SQLAlchemy** → ORM para banco de dados
 - **SQLite** → Banco de dados
 - **Gerenciamento de Erros** → Gerenciador global de erros
+- **Pytest** -> Testes unitários
+- **API key** -> Validação chave API
+- **Logs** -> Registro de logs
